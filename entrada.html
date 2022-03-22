@@ -1,0 +1,3443 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset='utf-8' />
+<meta http-equiv='Cache-Control' content='no-cache' />
+<meta name='author' content='Bruno Souza - 158 Eusebio'>
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><title>Controle Prevenção 7.0 - Barra do Ceará 305</title>
+<style>
+* {font-family: CENTURY GOTHIC, century gothic, arial, consolas}
+.bg {background-image:url('../Brgeral/imagens/bg/wp3.jpg')}
+
+	#divicons button:nth-child(1) 
+	{
+		background:rgb(255,105,180);
+		color:pink;
+		border-color:pink
+	}
+	
+	#btsubmit1
+	{
+		background:255,105,180
+	}
+	
+	#c1:checked ~ .bg{
+		background-position:top right
+	}
+	
+	#c1:checked ~ .screen .scroll .divright .slide .slide2 #overflow1 .divctrls .divpag nav .page-item .page-link,
+	#c1:checked ~ .screen .scroll .divright .slide .slide2 #overflow1 .divctrls .divpag2 nav .page-item .page-link,
+	#c1:checked ~ .screen .scroll .divright .slide .slide2 #overflow1 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(255,105,180)
+	}
+	
+	#c1:checked ~ .screen .scroll .divright .slide .slide2 #overflow1 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(255,105,180);
+		color: #fff;
+		border-color: rgb(255,105,180)
+	}
+	
+	#c1:checked ~ .divmenu,
+	#c1:checked ~ .screen .divhead,
+	#c1:checked ~ .screen #scroll1 .divleft input[type=submit],
+	#c1:checked ~ .screen #scroll1 .divleft #btsubmit2,
+	#c1:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c1:checked ~ .screen #scroll1 .divleft .menucha button:hover
+	{
+		background: rgb(255,105,180)
+	}
+	
+	#c1:checked ~ .screen .divhead, #c1:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(255,105,180)
+	}
+	
+	#c1:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(255,105,180,.2)
+	}
+	
+	#c1:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(255,105,180,.5)
+	}
+	
+	.effect-1 ~ .focus-border:before,
+	.effect-1 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-1 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-1 ~ .focus-border i:before,
+	.effect-1 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-1 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-1:focus ~ .focus-border:before,
+	.effect-1:focus ~ .focus-border:after,
+	.has-content.effect-1 ~ .focus-border:before,
+	.has-content.effect-1 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-1:focus~.focus-border i:before,
+	.effect-1:focus~.focus-border i:after,
+	.has-content.effect-1 ~ .focus-border i:before,
+	.has-content.effect-1 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-1 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-1:focus ~ label,
+	.has-content.effect-1 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-1:focus ~ label,
+	.has-content.effect-1 ~ label
+	{
+		color:rgb(255,105,180)
+	}
+	
+	.effect-1 ~ .focus-border i:before,
+	.effect-1 ~ .focus-border i:after,
+	.effect-1 ~ .focus-border:before,
+	.effect-1 ~ .focus-border:after
+	{
+		background:rgb(255,105,180)
+	}
+	
+	#divicons button:nth-child(2) 
+	{
+		background:rgb(255,69,0);
+		color:forestgreen;
+		border-color:forestgreen
+	}
+	
+	#btsubmit2
+	{
+		background:255,69,0
+	}
+	
+	#c2:checked ~ .bg{
+		background-position:bottom right
+	}
+	
+	#c2:checked ~ .screen .scroll .divright .slide .slide2 #overflow2 .divctrls .divpag nav .page-item .page-link,
+	#c2:checked ~ .screen .scroll .divright .slide .slide2 #overflow2 .divctrls .divpag2 nav .page-item .page-link,
+	#c2:checked ~ .screen .scroll .divright .slide .slide2 #overflow2 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(255,69,0)
+	}
+	
+	#c2:checked ~ .screen .scroll .divright .slide .slide2 #overflow2 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(255,69,0);
+		color: #fff;
+		border-color: rgb(255,69,0)
+	}
+	
+	#c2:checked ~ .divmenu,
+	#c2:checked ~ .screen .divhead,
+	#c2:checked ~ .screen #scroll2 .divleft input[type=submit],
+	#c2:checked ~ .screen #scroll2 .divleft #btsubmit2,
+	#c2:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c2:checked ~ .screen #scroll2 .divleft .menucha button:hover
+	{
+		background: rgb(255,69,0)
+	}
+	
+	#c2:checked ~ .screen .divhead, #c2:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(255,69,0)
+	}
+	
+	#c2:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(255,69,0,.2)
+	}
+	
+	#c2:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(255,69,0,.5)
+	}
+	
+	.effect-2 ~ .focus-border:before,
+	.effect-2 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-2 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-2 ~ .focus-border i:before,
+	.effect-2 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-2 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-2:focus ~ .focus-border:before,
+	.effect-2:focus ~ .focus-border:after,
+	.has-content.effect-2 ~ .focus-border:before,
+	.has-content.effect-2 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-2:focus~.focus-border i:before,
+	.effect-2:focus~.focus-border i:after,
+	.has-content.effect-2 ~ .focus-border i:before,
+	.has-content.effect-2 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-2 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-2:focus ~ label,
+	.has-content.effect-2 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-2:focus ~ label,
+	.has-content.effect-2 ~ label
+	{
+		color:rgb(255,69,0)
+	}
+	
+	.effect-2 ~ .focus-border i:before,
+	.effect-2 ~ .focus-border i:after,
+	.effect-2 ~ .focus-border:before,
+	.effect-2 ~ .focus-border:after
+	{
+		background:rgb(255,69,0)
+	}
+	
+	#divicons button:nth-child(3) 
+	{
+		background:rgb(65,105,225);
+		color:deepskyblue;
+		border-color:deepskyblue
+	}
+	
+	#btsubmit3
+	{
+		background:65,105,225
+	}
+	
+	#c3:checked ~ .bg{
+		background-position:center right
+	}
+	
+	#c3:checked ~ .screen .scroll .divright .slide .slide2 #overflow3 .divctrls .divpag nav .page-item .page-link,
+	#c3:checked ~ .screen .scroll .divright .slide .slide2 #overflow3 .divctrls .divpag2 nav .page-item .page-link,
+	#c3:checked ~ .screen .scroll .divright .slide .slide2 #overflow3 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(65,105,225)
+	}
+	
+	#c3:checked ~ .screen .scroll .divright .slide .slide2 #overflow3 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(65,105,225);
+		color: #fff;
+		border-color: rgb(65,105,225)
+	}
+	
+	#c3:checked ~ .divmenu,
+	#c3:checked ~ .screen .divhead,
+	#c3:checked ~ .screen #scroll3 .divleft input[type=submit],
+	#c3:checked ~ .screen #scroll3 .divleft #btsubmit2,
+	#c3:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c3:checked ~ .screen #scroll3 .divleft .menucha button:hover
+	{
+		background: rgb(65,105,225)
+	}
+	
+	#c3:checked ~ .screen .divhead, #c3:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(65,105,225)
+	}
+	
+	#c3:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(65,105,225,.2)
+	}
+	
+	#c3:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(65,105,225,.5)
+	}
+	
+	.effect-3 ~ .focus-border:before,
+	.effect-3 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-3 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-3 ~ .focus-border i:before,
+	.effect-3 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-3 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-3:focus ~ .focus-border:before,
+	.effect-3:focus ~ .focus-border:after,
+	.has-content.effect-3 ~ .focus-border:before,
+	.has-content.effect-3 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-3:focus~.focus-border i:before,
+	.effect-3:focus~.focus-border i:after,
+	.has-content.effect-3 ~ .focus-border i:before,
+	.has-content.effect-3 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-3 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-3:focus ~ label,
+	.has-content.effect-3 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-3:focus ~ label,
+	.has-content.effect-3 ~ label
+	{
+		color:rgb(65,105,225)
+	}
+	
+	.effect-3 ~ .focus-border i:before,
+	.effect-3 ~ .focus-border i:after,
+	.effect-3 ~ .focus-border:before,
+	.effect-3 ~ .focus-border:after
+	{
+		background:rgb(65,105,225)
+	}
+	
+	#divicons button:nth-child(4) 
+	{
+		background:rgb(255,99,71);
+		color:darkorange;
+		border-color:darkorange
+	}
+	
+	#btsubmit4
+	{
+		background:255,99,71
+	}
+	
+	#c4:checked ~ .bg{
+		background-position:center right
+	}
+	
+	#c4:checked ~ .screen .scroll .divright .slide .slide2 #overflow4 .divctrls .divpag nav .page-item .page-link,
+	#c4:checked ~ .screen .scroll .divright .slide .slide2 #overflow4 .divctrls .divpag2 nav .page-item .page-link,
+	#c4:checked ~ .screen .scroll .divright .slide .slide2 #overflow4 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(255,99,71)
+	}
+	
+	#c4:checked ~ .screen .scroll .divright .slide .slide2 #overflow4 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(255,99,71);
+		color: #fff;
+		border-color: rgb(255,99,71)
+	}
+	
+	#c4:checked ~ .divmenu,
+	#c4:checked ~ .screen .divhead,
+	#c4:checked ~ .screen #scroll4 .divleft input[type=submit],
+	#c4:checked ~ .screen #scroll4 .divleft #btsubmit2,
+	#c4:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c4:checked ~ .screen #scroll4 .divleft .menucha button:hover
+	{
+		background: rgb(255,99,71)
+	}
+	
+	#c4:checked ~ .screen .divhead, #c4:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(255,99,71)
+	}
+	
+	#c4:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(255,99,71,.2)
+	}
+	
+	#c4:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(255,99,71,.5)
+	}
+	
+	.effect-4 ~ .focus-border:before,
+	.effect-4 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-4 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-4 ~ .focus-border i:before,
+	.effect-4 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-4 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-4:focus ~ .focus-border:before,
+	.effect-4:focus ~ .focus-border:after,
+	.has-content.effect-4 ~ .focus-border:before,
+	.has-content.effect-4 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-4:focus~.focus-border i:before,
+	.effect-4:focus~.focus-border i:after,
+	.has-content.effect-4 ~ .focus-border i:before,
+	.has-content.effect-4 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-4 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-4:focus ~ label,
+	.has-content.effect-4 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-4:focus ~ label,
+	.has-content.effect-4 ~ label
+	{
+		color:rgb(255,99,71)
+	}
+	
+	.effect-4 ~ .focus-border i:before,
+	.effect-4 ~ .focus-border i:after,
+	.effect-4 ~ .focus-border:before,
+	.effect-4 ~ .focus-border:after
+	{
+		background:rgb(255,99,71)
+	}
+	
+	#divicons button:nth-child(5) 
+	{
+		background:rgb(119,136,153);
+		color:silver;
+		border-color:silver
+	}
+	
+	#btsubmit5
+	{
+		background:119,136,153
+	}
+	
+	#c5:checked ~ .bg{
+		background-position:bottom left
+	}
+	
+	#c5:checked ~ .screen .scroll .divright .slide .slide2 #overflow5 .divctrls .divpag nav .page-item .page-link,
+	#c5:checked ~ .screen .scroll .divright .slide .slide2 #overflow5 .divctrls .divpag2 nav .page-item .page-link,
+	#c5:checked ~ .screen .scroll .divright .slide .slide2 #overflow5 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(119,136,153)
+	}
+	
+	#c5:checked ~ .screen .scroll .divright .slide .slide2 #overflow5 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(119,136,153);
+		color: #fff;
+		border-color: rgb(119,136,153)
+	}
+	
+	#c5:checked ~ .divmenu,
+	#c5:checked ~ .screen .divhead,
+	#c5:checked ~ .screen #scroll5 .divleft input[type=submit],
+	#c5:checked ~ .screen #scroll5 .divleft #btsubmit2,
+	#c5:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c5:checked ~ .screen #scroll5 .divleft .menucha button:hover
+	{
+		background: rgb(119,136,153)
+	}
+	
+	#c5:checked ~ .screen .divhead, #c5:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(119,136,153)
+	}
+	
+	#c5:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(119,136,153,.2)
+	}
+	
+	#c5:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(119,136,153,.5)
+	}
+	
+	.effect-5 ~ .focus-border:before,
+	.effect-5 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-5 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-5 ~ .focus-border i:before,
+	.effect-5 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-5 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-5:focus ~ .focus-border:before,
+	.effect-5:focus ~ .focus-border:after,
+	.has-content.effect-5 ~ .focus-border:before,
+	.has-content.effect-5 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-5:focus~.focus-border i:before,
+	.effect-5:focus~.focus-border i:after,
+	.has-content.effect-5 ~ .focus-border i:before,
+	.has-content.effect-5 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-5 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-5:focus ~ label,
+	.has-content.effect-5 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-5:focus ~ label,
+	.has-content.effect-5 ~ label
+	{
+		color:rgb(119,136,153)
+	}
+	
+	.effect-5 ~ .focus-border i:before,
+	.effect-5 ~ .focus-border i:after,
+	.effect-5 ~ .focus-border:before,
+	.effect-5 ~ .focus-border:after
+	{
+		background:rgb(119,136,153)
+	}
+	
+	#divicons button:nth-child(6) 
+	{
+		background:rgb(75,0,130);
+		color:violet;
+		border-color:violet
+	}
+	
+	#btsubmit6
+	{
+		background:75,0,130
+	}
+	
+	#c6:checked ~ .bg{
+		background-position:center right
+	}
+	
+	#c6:checked ~ .screen .scroll .divright .slide .slide2 #overflow6 .divctrls .divpag nav .page-item .page-link,
+	#c6:checked ~ .screen .scroll .divright .slide .slide2 #overflow6 .divctrls .divpag2 nav .page-item .page-link,
+	#c6:checked ~ .screen .scroll .divright .slide .slide2 #overflow6 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(75,0,130)
+	}
+	
+	#c6:checked ~ .screen .scroll .divright .slide .slide2 #overflow6 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(75,0,130);
+		color: #fff;
+		border-color: rgb(75,0,130)
+	}
+	
+	#c6:checked ~ .divmenu,
+	#c6:checked ~ .screen .divhead,
+	#c6:checked ~ .screen #scroll6 .divleft input[type=submit],
+	#c6:checked ~ .screen #scroll6 .divleft #btsubmit2,
+	#c6:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c6:checked ~ .screen #scroll6 .divleft .menucha button:hover
+	{
+		background: rgb(75,0,130)
+	}
+	
+	#c6:checked ~ .screen .divhead, #c6:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(75,0,130)
+	}
+	
+	#c6:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(75,0,130,.2)
+	}
+	
+	#c6:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(75,0,130,.5)
+	}
+	
+	.effect-6 ~ .focus-border:before,
+	.effect-6 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-6 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-6 ~ .focus-border i:before,
+	.effect-6 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-6 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-6:focus ~ .focus-border:before,
+	.effect-6:focus ~ .focus-border:after,
+	.has-content.effect-6 ~ .focus-border:before,
+	.has-content.effect-6 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-6:focus~.focus-border i:before,
+	.effect-6:focus~.focus-border i:after,
+	.has-content.effect-6 ~ .focus-border i:before,
+	.has-content.effect-6 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-6 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-6:focus ~ label,
+	.has-content.effect-6 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-6:focus ~ label,
+	.has-content.effect-6 ~ label
+	{
+		color:rgb(75,0,130)
+	}
+	
+	.effect-6 ~ .focus-border i:before,
+	.effect-6 ~ .focus-border i:after,
+	.effect-6 ~ .focus-border:before,
+	.effect-6 ~ .focus-border:after
+	{
+		background:rgb(75,0,130)
+	}
+	
+	#divicons button:nth-child(7) 
+	{
+		background:rgb(218,165,32);
+		color:yellow;
+		border-color:yellow
+	}
+	
+	#btsubmit7
+	{
+		background:218,165,32
+	}
+	
+	#c7:checked ~ .bg{
+		background-position:bottom left
+	}
+	
+	#c7:checked ~ .screen .scroll .divright .slide .slide2 #overflow7 .divctrls .divpag nav .page-item .page-link,
+	#c7:checked ~ .screen .scroll .divright .slide .slide2 #overflow7 .divctrls .divpag2 nav .page-item .page-link,
+	#c7:checked ~ .screen .scroll .divright .slide .slide2 #overflow7 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(218,165,32)
+	}
+	
+	#c7:checked ~ .screen .scroll .divright .slide .slide2 #overflow7 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(218,165,32);
+		color: #fff;
+		border-color: rgb(218,165,32)
+	}
+	
+	#c7:checked ~ .divmenu,
+	#c7:checked ~ .screen .divhead,
+	#c7:checked ~ .screen #scroll7 .divleft input[type=submit],
+	#c7:checked ~ .screen #scroll7 .divleft #btsubmit2,
+	#c7:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c7:checked ~ .screen #scroll7 .divleft .menucha button:hover
+	{
+		background: rgb(218,165,32)
+	}
+	
+	#c7:checked ~ .screen .divhead, #c7:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(218,165,32)
+	}
+	
+	#c7:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(218,165,32,.2)
+	}
+	
+	#c7:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(218,165,32,.5)
+	}
+	
+	.effect-7 ~ .focus-border:before,
+	.effect-7 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-7 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-7 ~ .focus-border i:before,
+	.effect-7 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-7 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-7:focus ~ .focus-border:before,
+	.effect-7:focus ~ .focus-border:after,
+	.has-content.effect-7 ~ .focus-border:before,
+	.has-content.effect-7 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-7:focus~.focus-border i:before,
+	.effect-7:focus~.focus-border i:after,
+	.has-content.effect-7 ~ .focus-border i:before,
+	.has-content.effect-7 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-7 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-7:focus ~ label,
+	.has-content.effect-7 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-7:focus ~ label,
+	.has-content.effect-7 ~ label
+	{
+		color:rgb(218,165,32)
+	}
+	
+	.effect-7 ~ .focus-border i:before,
+	.effect-7 ~ .focus-border i:after,
+	.effect-7 ~ .focus-border:before,
+	.effect-7 ~ .focus-border:after
+	{
+		background:rgb(218,165,32)
+	}
+	
+	#divicons button:nth-child(8) 
+	{
+		background:rgb(47,79,79);
+		color:black;
+		border-color:black
+	}
+	
+	#btsubmit8
+	{
+		background:47,79,79
+	}
+	
+	#c8:checked ~ .bg{
+		background-position:center left
+	}
+	
+	#c8:checked ~ .screen .scroll .divright .slide .slide2 #overflow8 .divctrls .divpag nav .page-item .page-link,
+	#c8:checked ~ .screen .scroll .divright .slide .slide2 #overflow8 .divctrls .divpag2 nav .page-item .page-link,
+	#c8:checked ~ .screen .scroll .divright .slide .slide2 #overflow8 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(47,79,79)
+	}
+	
+	#c8:checked ~ .screen .scroll .divright .slide .slide2 #overflow8 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(47,79,79);
+		color: #fff;
+		border-color: rgb(47,79,79)
+	}
+	
+	#c8:checked ~ .divmenu,
+	#c8:checked ~ .screen .divhead,
+	#c8:checked ~ .screen #scroll8 .divleft input[type=submit],
+	#c8:checked ~ .screen #scroll8 .divleft #btsubmit2,
+	#c8:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c8:checked ~ .screen #scroll8 .divleft .menucha button:hover
+	{
+		background: rgb(47,79,79)
+	}
+	
+	#c8:checked ~ .screen .divhead, #c8:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(47,79,79)
+	}
+	
+	#c8:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(47,79,79,.2)
+	}
+	
+	#c8:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(47,79,79,.5)
+	}
+	
+	.effect-8 ~ .focus-border:before,
+	.effect-8 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-8 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-8 ~ .focus-border i:before,
+	.effect-8 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-8 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-8:focus ~ .focus-border:before,
+	.effect-8:focus ~ .focus-border:after,
+	.has-content.effect-8 ~ .focus-border:before,
+	.has-content.effect-8 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-8:focus~.focus-border i:before,
+	.effect-8:focus~.focus-border i:after,
+	.has-content.effect-8 ~ .focus-border i:before,
+	.has-content.effect-8 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-8 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-8:focus ~ label,
+	.has-content.effect-8 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-8:focus ~ label,
+	.has-content.effect-8 ~ label
+	{
+		color:rgb(47,79,79)
+	}
+	
+	.effect-8 ~ .focus-border i:before,
+	.effect-8 ~ .focus-border i:after,
+	.effect-8 ~ .focus-border:before,
+	.effect-8 ~ .focus-border:after
+	{
+		background:rgb(47,79,79)
+	}
+	
+	#divicons button:nth-child(9) 
+	{
+		background:rgb(220,20,60);
+		color:pink;
+		border-color:pink
+	}
+	
+	#btsubmit9
+	{
+		background:220,20,60
+	}
+	
+	#c9:checked ~ .bg{
+		background-position:center center
+	}
+	
+	#c9:checked ~ .screen .scroll .divright .slide .slide2 #overflow9 .divctrls .divpag nav .page-item .page-link,
+	#c9:checked ~ .screen .scroll .divright .slide .slide2 #overflow9 .divctrls .divpag2 nav .page-item .page-link,
+	#c9:checked ~ .screen .scroll .divright .slide .slide2 #overflow9 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(220,20,60)
+	}
+	
+	#c9:checked ~ .screen .scroll .divright .slide .slide2 #overflow9 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(220,20,60);
+		color: #fff;
+		border-color: rgb(220,20,60)
+	}
+	
+	#c9:checked ~ .divmenu,
+	#c9:checked ~ .screen .divhead,
+	#c9:checked ~ .screen #scroll9 .divleft input[type=submit],
+	#c9:checked ~ .screen #scroll9 .divleft #btsubmit2,
+	#c9:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c9:checked ~ .screen #scroll9 .divleft .menucha button:hover
+	{
+		background: rgb(220,20,60)
+	}
+	
+	#c9:checked ~ .screen .divhead, #c9:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(220,20,60)
+	}
+	
+	#c9:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(220,20,60,.2)
+	}
+	
+	#c9:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(220,20,60,.5)
+	}
+	
+	.effect-9 ~ .focus-border:before,
+	.effect-9 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-9 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-9 ~ .focus-border i:before,
+	.effect-9 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-9 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-9:focus ~ .focus-border:before,
+	.effect-9:focus ~ .focus-border:after,
+	.has-content.effect-9 ~ .focus-border:before,
+	.has-content.effect-9 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-9:focus~.focus-border i:before,
+	.effect-9:focus~.focus-border i:after,
+	.has-content.effect-9 ~ .focus-border i:before,
+	.has-content.effect-9 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-9 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-9:focus ~ label,
+	.has-content.effect-9 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-9:focus ~ label,
+	.has-content.effect-9 ~ label
+	{
+		color:rgb(220,20,60)
+	}
+	
+	.effect-9 ~ .focus-border i:before,
+	.effect-9 ~ .focus-border i:after,
+	.effect-9 ~ .focus-border:before,
+	.effect-9 ~ .focus-border:after
+	{
+		background:rgb(220,20,60)
+	}
+	
+	#divicons button:nth-child(10) 
+	{
+		background:rgb(65,105,255);
+		color:;
+		border-color:
+	}
+	
+	#btsubmit10
+	{
+		background:65,105,255
+	}
+	
+	#c10:checked ~ .bg{
+		background-position:bottom center
+	}
+	
+	#c10:checked ~ .screen .scroll .divright .slide .slide2 #overflow10 .divctrls .divpag nav .page-item .page-link,
+	#c10:checked ~ .screen .scroll .divright .slide .slide2 #overflow10 .divctrls .divpag2 nav .page-item .page-link,
+	#c10:checked ~ .screen .scroll .divright .slide .slide2 #overflow10 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(65,105,255)
+	}
+	
+	#c10:checked ~ .screen .scroll .divright .slide .slide2 #overflow10 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(65,105,255);
+		color: #fff;
+		border-color: rgb(65,105,255)
+	}
+	
+	#c10:checked ~ .divmenu,
+	#c10:checked ~ .screen .divhead,
+	#c10:checked ~ .screen #scroll10 .divleft input[type=submit],
+	#c10:checked ~ .screen #scroll10 .divleft #btsubmit2,
+	#c10:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c10:checked ~ .screen #scroll10 .divleft .menucha button:hover
+	{
+		background: rgb(65,105,255)
+	}
+	
+	#c10:checked ~ .screen .divhead, #c10:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(65,105,255)
+	}
+	
+	#c10:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(65,105,255,.2)
+	}
+	
+	#c10:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(65,105,255,.5)
+	}
+	
+	.effect-10 ~ .focus-border:before,
+	.effect-10 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-10 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-10 ~ .focus-border i:before,
+	.effect-10 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-10 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-10:focus ~ .focus-border:before,
+	.effect-10:focus ~ .focus-border:after,
+	.has-content.effect-10 ~ .focus-border:before,
+	.has-content.effect-10 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-10:focus~.focus-border i:before,
+	.effect-10:focus~.focus-border i:after,
+	.has-content.effect-10 ~ .focus-border i:before,
+	.has-content.effect-10 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-10 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-10:focus ~ label,
+	.has-content.effect-10 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-10:focus ~ label,
+	.has-content.effect-10 ~ label
+	{
+		color:rgb(65,105,255)
+	}
+	
+	.effect-10 ~ .focus-border i:before,
+	.effect-10 ~ .focus-border i:after,
+	.effect-10 ~ .focus-border:before,
+	.effect-10 ~ .focus-border:after
+	{
+		background:rgb(65,105,255)
+	}
+	
+	#divicons button:nth-child(11) 
+	{
+		background:rgb(65,105,255);
+		color:;
+		border-color:
+	}
+	
+	#btsubmit11
+	{
+		background:65,105,255
+	}
+	
+	#c11:checked ~ .bg{
+		background-position:top center
+	}
+	
+	#c11:checked ~ .screen .scroll .divright .slide .slide2 #overflow11 .divctrls .divpag nav .page-item .page-link,
+	#c11:checked ~ .screen .scroll .divright .slide .slide2 #overflow11 .divctrls .divpag2 nav .page-item .page-link,
+	#c11:checked ~ .screen .scroll .divright .slide .slide2 #overflow11 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(65,105,255)
+	}
+	
+	#c11:checked ~ .screen .scroll .divright .slide .slide2 #overflow11 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(65,105,255);
+		color: #fff;
+		border-color: rgb(65,105,255)
+	}
+	
+	#c11:checked ~ .divmenu,
+	#c11:checked ~ .screen .divhead,
+	#c11:checked ~ .screen #scroll11 .divleft input[type=submit],
+	#c11:checked ~ .screen #scroll11 .divleft #btsubmit2,
+	#c11:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c11:checked ~ .screen #scroll11 .divleft .menucha button:hover
+	{
+		background: rgb(65,105,255)
+	}
+	
+	#c11:checked ~ .screen .divhead, #c11:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(65,105,255)
+	}
+	
+	#c11:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(65,105,255,.2)
+	}
+	
+	#c11:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(65,105,255,.5)
+	}
+	
+	.effect-11 ~ .focus-border:before,
+	.effect-11 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-11 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-11 ~ .focus-border i:before,
+	.effect-11 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-11 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-11:focus ~ .focus-border:before,
+	.effect-11:focus ~ .focus-border:after,
+	.has-content.effect-11 ~ .focus-border:before,
+	.has-content.effect-11 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-11:focus~.focus-border i:before,
+	.effect-11:focus~.focus-border i:after,
+	.has-content.effect-11 ~ .focus-border i:before,
+	.has-content.effect-11 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-11 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-11:focus ~ label,
+	.has-content.effect-11 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-11:focus ~ label,
+	.has-content.effect-11 ~ label
+	{
+		color:rgb(65,105,255)
+	}
+	
+	.effect-11 ~ .focus-border i:before,
+	.effect-11 ~ .focus-border i:after,
+	.effect-11 ~ .focus-border:before,
+	.effect-11 ~ .focus-border:after
+	{
+		background:rgb(65,105,255)
+	}
+	
+	#divicons button:nth-child(12) 
+	{
+		background:rgb(47,79,79);
+		color:;
+		border-color:
+	}
+	
+	#btsubmit12
+	{
+		background:47,79,79
+	}
+	
+	#c12:checked ~ .bg{
+		background-position:top right
+	}
+	
+	#c12:checked ~ .screen .scroll .divright .slide .slide2 #overflow12 .divctrls .divpag nav .page-item .page-link,
+	#c12:checked ~ .screen .scroll .divright .slide .slide2 #overflow12 .divctrls .divpag2 nav .page-item .page-link,
+	#c12:checked ~ .screen .scroll .divright .slide .slide2 #overflow12 .divctrls .divpag nav .page-item .page-link svg
+	{
+		color: rgb(47,79,79)
+	}
+	
+	#c12:checked ~ .screen .scroll .divright .slide .slide2 #overflow12 .divctrls .divpag nav .page-item.active .page-link
+	{
+		background: rgb(47,79,79);
+		color: #fff;
+		border-color: rgb(47,79,79)
+	}
+	
+	#c12:checked ~ .divmenu,
+	#c12:checked ~ .screen .divhead,
+	#c12:checked ~ .screen #scroll12 .divleft input[type=submit],
+	#c12:checked ~ .screen #scroll12 .divleft #btsubmit2,
+	#c12:checked ~ .screen .divright .slide .slide2 .overflow .table-react th,
+	#c12:checked ~ .screen #scroll12 .divleft .menucha button:hover
+	{
+		background: rgb(47,79,79)
+	}
+	
+	#c12:checked ~ .screen .divhead, #c12:checked ~ .screen .divleft .col-3 span svg:hover
+	{
+		color: rgb(47,79,79)
+	}
+	
+	#c12:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:nth-child(even) > td
+	{
+		background: rgba(47,79,79,.2)
+	}
+	
+	#c12:checked ~ .screen .divright .slide .slide2 .overflow .table-react tr:hover > td
+	{
+		background: rgba(47,79,79,.5)
+	}
+	
+	.effect-12 ~ .focus-border:before,
+	.effect-12 ~ .focus-border:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		transition: 0.3s
+	}
+	
+	.effect-12 ~ .focus-border:after
+	{
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0
+	}
+	
+	.effect-12 ~ .focus-border i:before,
+	.effect-12 ~ .focus-border i:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+		transition: 0.3s
+	}
+	
+	.effect-12 ~ .focus-border i:after
+	{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0
+	}
+	
+	.effect-12:focus ~ .focus-border:before,
+	.effect-12:focus ~ .focus-border:after,
+	.has-content.effect-12 ~ .focus-border:before,
+	.has-content.effect-12 ~ .focus-border:after
+	{
+		width: 100%;
+		transition: 0.3s
+	}
+	
+	.effect-12:focus~.focus-border i:before,
+	.effect-12:focus~.focus-border i:after,
+	.has-content.effect-12 ~ .focus-border i:before,
+	.has-content.effect-12 ~ .focus-border i:after
+	{
+		height: 100%;
+		transition: 0.4s
+	}
+	
+	.effect-12 ~ label
+	{
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		color: #666;
+		letter-spacing: 0.5px
+	}
+	
+	.effect-12:focus ~ label,
+	.has-content.effect-12 ~ label
+	{
+		top: -15px;
+		left:0;
+		transform: translate(0,0);
+		font-size: 12px
+	}
+	
+	.effect-12:focus ~ label,
+	.has-content.effect-12 ~ label
+	{
+		color:rgb(47,79,79)
+	}
+	
+	.effect-12 ~ .focus-border i:before,
+	.effect-12 ~ .focus-border i:after,
+	.effect-12 ~ .focus-border:before,
+	.effect-12 ~ .focus-border:after
+	{
+		background:rgb(47,79,79)
+	}
+	.preloader{background: rgb(75,0,130)}
+</style>
+<link rel='stylesheet' type='text/css' media='all' href='css/style.css' /><link rel='stylesheet' type='text/css' media='all' href='css/glass.css' /><link rel='stylesheet' type='text/css' media='all' href='css/frames.css' /><link rel='stylesheet' type='text/css' media='all' href='css/tela.css' /><link rel='stylesheet' type='text/css' media='all' href='../Brgeral/js/jquery/toast/toast.min.css' /><link rel='stylesheet' type='text/css' media='all' href='../Brgeral/js/cute-alert-master/style.css' /><link rel='shortcut icon' HREF='../Brgeral/svg/puzzle-color.svg' /><script type='text/javascript' src='../Brgeral/js/jquery/jquery-3.6.0.min.js'></script><script type='text/javascript' src='../Brgeral/js/jquery/toast/toast.min.js'></script><script type='text/javascript' src='../Brgeral/js/cute-alert-master/cute-alert.js'></script><script type='text/javascript' src='../Brgeral/js/horaAtual.js'></script><script type='text/javascript' src='../Brgeral/js/clockDigital.js'></script><script type='text/javascript' src='jquery/jquery.js'></script>
+<script type='text/javascript'>
+	$(window).on('load',function() {
+		toggleDiv(3,'keymat');
+		proximo_segundo( 'time' );
+		pend();
+		horaEmhora();
+		vpdv();
+
+		setTimeout(function(){
+			$('.preloader').css('display', 'none');
+		},3000);
+	});
+</script>
+</head>
+<body>
+	<input type='radio' class='c' name='c' id='c1' value='1' /><input type='radio' class='c' name='c' id='c2' value='2' /><input type='radio' class='c' name='c' id='c3' value='3' /><input type='radio' class='c' name='c' id='c4' value='4' /><input type='radio' class='c' name='c' id='c5' value='5' /><input type='radio' class='c' name='c' id='c6' value='6' /><input type='radio' class='c' name='c' id='c7' value='7' /><input type='radio' class='c' name='c' id='c8' value='8' /><input type='radio' class='c' name='c' id='c9' value='9' /><input type='radio' class='c' name='c' id='c10' value='10' /><input type='radio' class='c' name='c' id='c11' value='11' /><input type='radio' class='c' name='c' id='c12' value='12' /><input type='checkbox' class='m' id='m2' /><input type='checkbox' class='m' id='m3' /><input type='radio' name='s' id='s3' class='s' /><input type='radio' name='s' id='s8' class='s' /><input type='radio' name='s' id='s10' class='s' /><input type='radio' name='s' id='s11' class='s' /><input type='radio' name='s' id='s12' class='s' /><div class="esconde">
+	<div class="divcentro"></div>
+</div><div class="preloader">
+	<div class="logo_g">
+		<pre>&lt;/&gt;</pre>
+		<pre>Controle Prevenção<span>7.0</span></pre>
+		<pre>By blbsouza Technology</pre>
+	</div>
+</div><div class="toast" style="top: -200px;">
+	<div class="toastc">
+		<div class="toastc1"></div>
+		<div class="toastc2"></div>
+		<div class="toastc3"></div>
+		<div class="toastc4"></div>
+	</div>
+	<div class="toasti">
+		<div class="toasti1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></div>
+		<div class="toasti2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+</svg></div>
+		<div class="toasti3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+</svg></div>
+		<div class="toasti4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+</svg></div>
+	</div>
+	<div class="toastt">
+		<h4></h4>
+		<p></p>
+	</div>
+	<div class="toastx">
+		<button onClick="closeToast()">&times;</button>
+	</div>
+</div><div class="bg"></div><input type="checkbox" id="toggler" checked />
+<label for="toggler" class="hamburger"><div></div></label>
+
+<div class="divmenu">
+
+	<div class="divmenu1">	
+		<div>
+			<img src="../Brgeral/imagens/logobanner.png" alt="" onClick="window.open('http://portal.atacadao.com.br/')" title="ATACADÃO SA" />
+		</div>
+		<h2>
+			Controle Prevenção
+			<br>
+			<span id="headh1span">7.0</span>
+		</h2>
+		<pre id="filial">Barra do Ceará 305</pre>
+	</div>
+	
+	<div class="divmenu2">
+		<label id="chevron_l" onclick="chevronWdgt(1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+</svg></label>
+		<label id="chevron_r" onclick="chevronWdgt(2)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+</svg></label>
+		<input type='radio' class='w' name='w' id='w1' value='1' checked /><input type='radio' class='w' name='w' id='w2' value='2'  />		<div class="scroll_wdgt">
+			<section>
+				
+				<p>sábado</p>
+				<input id="time" value="19:45:50" readonly />
+				<p>19 de março de 2022</p>
+				
+			</section>
+			<section>
+				<h3>Normas e Procedimentos</h3>
+				<button class="btproc" onclick="window.open('http://srvweb2/procedimentos/pdf/79-2.pdf')">Conferencia e Estocagem de Produtos PAR</button>
+				<button class="btproc" onclick="window.open('http://srvweb2/procedimentos/pdf/385-1.pdf')">Gestão Noturna nas Unidades AS e AT</button>
+				<button class="btproc" onclick="window.open('http://srvweb2/procedimentos/pdf/81-7.pdf')">Orientações Gerais - Segurança Patrimonial</button>
+				<button class="btproc" onclick="window.open('http://srvweb2/procedimentos/pdf/244-3.pdf')">Orientações para Uso do Estacionamento Matriz</button>
+				<button class="btproc" onclick="window.open('http://srvweb2/procedimentos/pdf/80-1.pdf')">Vigilancia em Guarita</button>
+			</section>
+		</div>
+
+	</div>
+	
+	<div class="divmenu3">
+		<div id="divm1">
+			<h4>Menu de Apps</h4>
+		</div>
+		<div id="divicons">
+			
+	<button onClick="toggleDiv(1,'veianum');document.getElementById('title').innerHTML='Anúncio de Veículos'" title="Anúncio de Veículos">An<span class='sp' id='sp1'></span></button>
+	
+	<button onClick="toggleDiv(2,'armmat');document.getElementById('title').innerHTML='Controle de Armários'" title="Controle de Armários">Ar<span class='sp' id='sp2'></span></button>
+	
+	<button onClick="toggleDiv(3,'keymat');document.getElementById('title').innerHTML='Controle de Chaves'" title="Controle de Chaves">Ch<span class='sp' id='sp3'></span></button>
+	
+	<button onClick="toggleDiv(4,'veifox');document.getElementById('title').innerHTML='Carro Forte'" title="Carro Forte">Cf<span class='sp' id='sp4'></span></button>
+	
+	<button onClick="toggleDiv(5,'senha');document.getElementById('title').innerHTML='Senha Noturna'" title="Senha Noturna">Sn<span class='sp' id='sp5'></span></button>
+	
+	<button onClick="toggleDiv(6,'placa6');document.getElementById('title').innerHTML='Carro Pipa'" title="Carro Pipa">Pi<span class='sp' id='sp6'></span></button>
+	
+	<button onClick="toggleDiv(7,'nomepm');document.getElementById('title').innerHTML='Refeição PMs'" title="Refeição PMs">Pm<span class='sp' id='sp7'></span></button>
+	
+	<button onClick="toggleDiv(8,'pfiscal');document.getElementById('title').innerHTML='Contagem de Pneus'" title="Contagem de Pneus">Pn<span class='sp' id='sp8'></span></button>
+	
+	<button onClick="toggleDiv(9,'senhasenha');document.getElementById('title').innerHTML='Senha PDV'" title="Senha PDV">Sp<span class='sp' id='sp9'></span></button>
+			</div>
+		<div id="divcopy">
+			<pre>Copyright &copy; 2022<br>By blbsouza Technology<br>All rights reserved</pre>
+		</div>
+	</div>
+	
+	<pre id="mylogo" onClick="alert('Copyright &copy; 2022 by blbsouza Technology All rights reserved')">&lt;/&gt;</pre>
+	
+</div>	<div class="recebe"></div>
+	<div class="screen">
+	<div class="divhead">
+
+	<img id="logo_atc2" src="../Brgeral/imagens/logobanner.png" alt="" onClick="window.open('http://portal.atacadao.com.br/')" title="ATACADÃO SA" />
+	
+	<h2 id="title">Controle Prevenção</h2>
+
+	<img id="logo" src="../Brgeral/svg/puzzle-color.svg" alt="" title="DEPARTAMENTO DE PREVENÇÃO DE PERDAS" />
+</div>
+
+<div class="divbtmenu">
+	
+	<div class="divbts1" onMouseover="document.getElementById('btsearch').focus()">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>		<input type="search" class="btsearch" id="btsearch" placeholder="Pesquisa..." oninput="search(this.value)" />
+	</div>
+	<div class="divbts2">
+		<button id="bt_print" title="Impressão direta" onclick="btPrint()">
+			<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 429.279 429.279" style="enable-background:new 0 0 429.279 429.279;" xml:space="preserve">
+<g>
+	<g>
+		<rect x="113.161" y="34.717" style="fill:none;" width="202.957" height="114.953"/>
+		<path style="fill:none;" d="M405.279,198.475c0-13.677-11.127-24.805-24.805-24.805H48.805C35.127,173.67,24,184.797,24,198.475
+			v7.961h381.279V198.475z M384.123,198.542c-2.23,2.23-5.33,3.51-8.48,3.51c-3.16,0-6.25-1.28-8.49-3.51
+			c-2.23-2.24-3.51-5.33-3.51-8.49c0-3.16,1.28-6.25,3.51-8.48c2.24-2.24,5.33-3.52,8.49-3.52c3.15,0,6.25,1.28,8.48,3.52
+			c2.24,2.23,3.52,5.32,3.52,8.48C387.642,193.212,386.363,196.302,384.123,198.542z"/>
+		<path style="fill:none;" d="M110.846,394.563h207.588V266.533H110.846V394.563z M141.998,292.908h140.514c6.627,0,12,5.372,12,12
+			c0,6.627-5.373,12-12,12H141.998c-6.627,0-12-5.373-12-12C129.998,298.281,135.371,292.908,141.998,292.908z M141.998,344.189
+			h65.641c6.628,0,12,5.373,12,12c0,6.627-5.372,12-12,12h-65.641c-6.627,0-12-5.373-12-12
+			C129.998,349.562,135.371,344.189,141.998,344.189z"/>
+		<path style="fill:#73D0F4;" d="M24,327.508c0,13.676,11.127,24.803,24.805,24.803h38.041v-97.777c0-6.628,5.372-12,12-12h231.588
+			c6.628,0,12,5.372,12,12v97.777h38.041c13.678,0,24.805-11.126,24.805-24.803v-97.072H24V327.508z"/>
+		<path style="fill:#3D6889;" d="M380.475,149.67h-40.357V22.717c0-6.627-5.372-12-12-12H101.161c-6.628,0-12,5.373-12,12V149.67
+			H48.805C21.893,149.67,0,171.563,0,198.475v129.033c0,26.91,21.893,48.803,48.805,48.803h38.041v30.252c0,6.627,5.372,12,12,12
+			h231.588c6.628,0,12-5.373,12-12V376.31h38.041c26.911,0,48.805-21.893,48.805-48.803V198.475
+			C429.279,171.563,407.386,149.67,380.475,149.67z M405.279,327.508c0,13.676-11.127,24.803-24.805,24.803h-38.041v-97.777
+			c0-6.628-5.372-12-12-12H98.846c-6.628,0-12,5.372-12,12v97.777H48.805C35.127,352.31,24,341.184,24,327.508v-97.072h381.279
+			V327.508z M113.161,34.717h202.957V149.67H113.161V34.717z M24,198.475c0-13.677,11.127-24.805,24.805-24.805h331.67
+			c13.678,0,24.805,11.127,24.805,24.805v7.961H24V198.475z M318.434,394.563H110.846V266.533h207.588V394.563z"/>
+		<path style="fill:#3D6889;" d="M375.642,178.052c-3.16,0-6.25,1.28-8.49,3.52c-2.23,2.23-3.51,5.32-3.51,8.48
+			c0,3.16,1.28,6.25,3.51,8.49c2.24,2.23,5.33,3.51,8.49,3.51c3.15,0,6.25-1.28,8.48-3.51c2.24-2.24,3.52-5.33,3.52-8.49
+			c0-3.16-1.279-6.25-3.52-8.48C381.892,179.332,378.793,178.052,375.642,178.052z"/>
+		<path style="fill:#3D6889;" d="M141.998,316.908h140.514c6.627,0,12-5.373,12-12c0-6.628-5.373-12-12-12H141.998
+			c-6.627,0-12,5.372-12,12C129.998,311.536,135.371,316.908,141.998,316.908z"/>
+		<path style="fill:#3D6889;" d="M141.998,368.189h65.641c6.628,0,12-5.373,12-12c0-6.627-5.372-12-12-12h-65.641
+			c-6.627,0-12,5.373-12,12C129.998,362.817,135.371,368.189,141.998,368.189z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+		</button>
+		<button id="bt_excel" title="Gerar planilha no formato csv" onclick="btCsv()">
+					</button>
+		<button id="bt_op" title="Opções gerais" onClick="arCls( 1, '.esconde', 'mostra' );arCls( 1, '.divcentro', 'centromostra' );changeOpt( 1, '' )">
+			<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<path style="fill:#1E0478;" d="M512,233.108v45.785c0,13.186-9.814,24.602-22.821,26.55c-9.635,1.435-19.521,2.821-29.384,4.112
+	c-1.195,0.155-2.164,0.968-2.463,2.068c-4.555,16.521-11.165,32.456-19.641,47.387c-0.574,1.004-0.466,2.259,0.275,3.216
+	c6.061,7.89,12.086,15.863,17.872,23.693c7.83,10.579,6.694,25.594-2.642,34.918l-32.36,32.36
+	c-9.336,9.336-24.339,10.472-34.918,2.642c-7.818-5.786-15.792-11.799-23.693-17.872c-0.956-0.729-2.212-0.837-3.216-0.275
+	c-14.919,8.476-30.866,15.086-47.387,19.641c-1.1,0.299-1.913,1.267-2.068,2.463c-1.291,9.874-2.678,19.76-4.112,29.383
+	C303.494,502.186,292.078,512,278.88,512H233.12c-13.197,0-24.614-9.814-26.562-22.821c-1.434-9.611-2.821-19.497-4.112-29.383
+	c-0.155-1.195-0.968-2.164-2.068-2.463c-16.521-4.555-32.468-11.165-47.387-19.641c-0.992-0.562-2.259-0.466-3.216,0.275
+	c-7.902,6.073-15.875,12.086-23.693,17.872c-10.579,7.83-25.582,6.694-34.918-2.642l-32.36-32.36
+	c-9.336-9.324-10.472-24.339-2.642-34.918c5.786-7.83,11.799-15.792,17.872-23.693c0.741-0.956,0.849-2.212,0.275-3.216
+	c-8.476-14.931-15.086-30.878-19.641-47.387c-0.299-1.1-1.267-1.913-2.463-2.068c-9.862-1.291-19.748-2.666-29.384-4.112
+	C9.814,303.494,0,292.078,0,278.892v-45.785c0-13.186,9.814-24.602,22.821-26.55c9.635-1.446,19.521-2.821,29.384-4.112
+	c1.195-0.155,2.164-0.968,2.463-2.068c4.555-16.509,11.165-32.456,19.641-47.387c0.574-1.004,0.466-2.259-0.275-3.216
+	c-6.061-7.878-12.074-15.851-17.872-23.693c-7.83-10.579-6.694-25.582,2.642-34.918l32.36-32.36
+	c9.324-9.336,24.339-10.472,34.918-2.642c7.818,5.786,15.792,11.799,23.693,17.872c0.956,0.729,2.223,0.849,3.216,0.275
+	c14.919-8.476,30.866-15.086,47.387-19.641c1.1-0.299,1.913-1.267,2.068-2.463c1.291-9.886,2.678-19.772,4.112-29.384
+	C208.506,9.814,219.922,0,233.12,0h45.773c13.186,0,24.602,9.814,26.55,22.821c1.435,9.611,2.821,19.497,4.112,29.384
+	c0.155,1.195,0.968,2.164,2.068,2.463c16.521,4.555,32.468,11.165,47.387,19.641c1.004,0.574,2.271,0.466,3.216-0.275
+	c7.902-6.073,15.875-12.086,23.693-17.872c10.579-7.83,25.594-6.694,34.918,2.642l32.36,32.36
+	c9.336,9.324,10.472,24.339,2.642,34.918c-5.786,7.83-11.811,15.804-17.872,23.693c-0.741,0.956-0.849,2.223-0.275,3.216
+	c8.476,14.931,15.086,30.866,19.641,47.387c0.299,1.1,1.267,1.913,2.463,2.068c9.862,1.291,19.748,2.678,29.384,4.112
+	C502.186,208.506,512,219.922,512,233.108z M488.092,278.892v-45.785c0-1.446-1.052-2.69-2.451-2.905
+	c-9.492-1.423-19.222-2.785-28.941-4.052c-10.747-1.399-19.557-9.013-22.414-19.414c-4.029-14.62-9.874-28.726-17.381-41.935
+	c-5.332-9.384-4.507-21.004,2.116-29.611c5.977-7.77,11.894-15.612,17.597-23.323c0.849-1.136,0.705-2.773-0.323-3.801l-32.36-32.36
+	c-1.028-1.028-2.666-1.172-3.801-0.323c-7.687,5.69-15.54,11.608-23.323,17.597c-8.595,6.623-20.227,7.447-29.611,2.116
+	c-13.209-7.495-27.315-13.341-41.935-17.381c-10.388-2.857-18.015-11.667-19.414-22.426c-1.279-9.731-2.642-19.461-4.052-28.929
+	c-0.203-1.399-1.458-2.451-2.905-2.451H233.12c-1.458,0-2.702,1.052-2.917,2.451c-1.411,9.468-2.773,19.199-4.052,28.929
+	c-1.399,10.759-9.025,19.569-19.414,22.426c-14.62,4.041-28.726,9.886-41.935,17.381c-9.384,5.332-21.004,4.507-29.611-2.116
+	c-7.782-5.989-15.636-11.906-23.323-17.597c-1.148-0.849-2.773-0.705-3.801,0.323l-32.36,32.36
+	c-1.028,1.028-1.172,2.654-0.323,3.801c5.714,7.722,11.631,15.564,17.597,23.323c6.623,8.595,7.447,20.227,2.116,29.611
+	c-7.507,13.209-13.353,27.315-17.381,41.935c-2.857,10.388-11.667,18.015-22.426,19.414c-9.707,1.267-19.438,2.63-28.929,4.052
+	c-1.399,0.215-2.451,1.458-2.451,2.905v45.785c0,1.446,1.052,2.69,2.451,2.905c9.492,1.423,19.222,2.785,28.941,4.052
+	c10.747,1.399,19.557,9.025,22.414,19.414c4.029,14.62,9.874,28.726,17.381,41.935c5.332,9.384,4.507,21.016-2.116,29.611
+	c-5.977,7.77-11.894,15.624-17.597,23.323c-0.849,1.148-0.705,2.773,0.323,3.801l32.36,32.36c1.028,1.028,2.654,1.16,3.801,0.323
+	c7.687-5.69,15.541-11.608,23.323-17.597c4.83-3.718,10.615-5.607,16.413-5.607c4.531,0,9.085,1.148,13.197,3.491
+	c13.209,7.495,27.315,13.341,41.935,17.381c10.388,2.857,18.015,11.667,19.414,22.426c1.279,9.731,2.642,19.461,4.052,28.929
+	c0.215,1.399,1.458,2.451,2.917,2.451h45.761c1.458,0,2.714-1.052,2.917-2.451c1.423-9.48,2.773-19.21,4.052-28.929
+	c1.399-10.759,9.025-19.569,19.414-22.426c14.62-4.041,28.726-9.886,41.935-17.381c9.384-5.332,21.016-4.507,29.611,2.116
+	c7.782,5.989,15.636,11.906,23.323,17.597c1.136,0.849,2.773,0.705,3.801-0.323l32.36-32.36c1.028-1.028,1.172-2.666,0.323-3.801
+	c-5.702-7.711-11.62-15.552-17.597-23.323c-6.623-8.607-7.448-20.227-2.116-29.611c7.507-13.209,13.353-27.315,17.381-41.935
+	c2.857-10.4,11.667-18.015,22.426-19.414c9.707-1.267,19.438-2.63,28.929-4.052C487.04,281.582,488.092,280.339,488.092,278.892z"/>
+<path style="fill:#9B8CCC;" d="M488.092,233.108v45.785c0,1.446-1.052,2.69-2.451,2.905c-9.492,1.423-19.222,2.785-28.929,4.052
+	c-10.759,1.399-19.569,9.013-22.426,19.414c-4.029,14.62-9.874,28.726-17.381,41.935c-5.332,9.384-4.507,21.004,2.116,29.611
+	c5.977,7.77,11.894,15.612,17.597,23.323c0.849,1.136,0.705,2.773-0.323,3.801l-32.36,32.36c-1.028,1.028-2.666,1.172-3.801,0.323
+	c-7.687-5.69-15.54-11.608-23.323-17.597c-8.595-6.623-20.227-7.447-29.611-2.116c-13.209,7.495-27.315,13.341-41.935,17.381
+	c-10.388,2.857-18.015,11.667-19.414,22.426c-1.279,9.719-2.63,19.45-4.052,28.929c-0.203,1.399-1.458,2.451-2.917,2.451H233.12
+	c-1.458,0-2.702-1.052-2.917-2.451c-1.411-9.468-2.773-19.199-4.052-28.929c-1.399-10.759-9.025-19.569-19.414-22.426
+	c-14.62-4.041-28.726-9.886-41.935-17.381c-4.112-2.343-8.667-3.491-13.197-3.491c-5.798,0-11.584,1.889-16.413,5.607
+	c-7.782,5.989-15.636,11.906-23.323,17.597c-1.148,0.837-2.773,0.705-3.801-0.323l-32.36-32.36
+	c-1.028-1.028-1.172-2.654-0.323-3.801c5.702-7.699,11.62-15.552,17.597-23.323c6.623-8.595,7.447-20.227,2.116-29.611
+	c-7.507-13.209-13.353-27.315-17.381-41.935c-2.857-10.388-11.667-18.015-22.414-19.414c-9.719-1.267-19.45-2.63-28.941-4.052
+	c-1.399-0.215-2.451-1.458-2.451-2.905v-45.785c0-1.446,1.052-2.69,2.451-2.905c9.492-1.423,19.222-2.785,28.929-4.052
+	c10.759-1.399,19.569-9.025,22.426-19.414c4.029-14.62,9.874-28.726,17.381-41.935c5.332-9.384,4.507-21.016-2.116-29.611
+	c-5.965-7.758-11.883-15.6-17.597-23.323c-0.849-1.148-0.705-2.773,0.323-3.801l32.36-32.36c1.028-1.028,2.654-1.172,3.801-0.323
+	c7.687,5.69,15.541,11.608,23.323,17.597c8.607,6.623,20.227,7.447,29.611,2.116c13.209-7.495,27.315-13.341,41.935-17.381
+	c10.388-2.857,18.015-11.667,19.414-22.426c1.279-9.731,2.642-19.461,4.052-28.929c0.215-1.399,1.458-2.451,2.917-2.451h45.773
+	c1.446,0,2.702,1.052,2.905,2.451c1.411,9.468,2.773,19.199,4.052,28.929c1.399,10.759,9.025,19.569,19.414,22.426
+	c14.62,4.041,28.726,9.886,41.935,17.381c9.384,5.332,21.016,4.507,29.611-2.116c7.782-5.989,15.636-11.906,23.323-17.597
+	c1.136-0.849,2.773-0.705,3.801,0.323l32.36,32.36c1.028,1.028,1.172,2.666,0.323,3.801c-5.702,7.71-11.62,15.552-17.597,23.323
+	c-6.623,8.607-7.448,20.227-2.116,29.611c7.507,13.209,13.353,27.315,17.381,41.935c2.857,10.4,11.667,18.015,22.414,19.414
+	c9.719,1.267,19.45,2.63,28.941,4.052C487.04,230.418,488.092,231.661,488.092,233.108z M367.139,256
+	c0-61.277-49.861-111.139-111.139-111.139S144.861,194.723,144.861,256S194.723,367.139,256,367.139S367.139,317.277,367.139,256z"
+	/>
+<path style="fill:#1E0478;" d="M256,144.861c61.277,0,111.139,49.861,111.139,111.139S317.277,367.139,256,367.139
+	S144.861,317.277,144.861,256S194.723,144.861,256,144.861z M343.23,256c0-48.092-39.138-87.23-87.23-87.23
+	s-87.23,39.138-87.23,87.23s39.138,87.23,87.23,87.23S343.23,304.092,343.23,256z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+		</button>
+		<button id="bt_clean" title="Limpeza de Dados" onClick="mandaClean()">
+			<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<path style="fill:#AF7AAE;" d="M467.478,445.217H155.826l-22.261-256h356.174L467.478,445.217z"/>
+<path style="fill:#8E5B8E;" d="M489.739,166.957v22.261l-1.936,22.261H135.501l-1.936-22.261v-22.261H489.739z"/>
+<path style="fill:#D199D1;" d="M512,144.696v22.261c0,12.295-9.966,22.261-22.261,22.261H133.565
+	c-12.295,0-22.261-9.966-22.261-22.261v-22.261c0-12.295,9.966-22.261,22.261-22.261h356.174
+	C502.034,122.435,512,132.401,512,144.696z"/>
+<path style="fill:#A7E5CB;" d="M478.609,434.087L478.609,434.087c0,18.441-14.949,33.391-33.391,33.391h-68.69
+	c1.231,3.482,1.908,7.227,1.908,11.13l0,0c0,18.441-14.949,33.391-33.391,33.391H33.391C14.949,512,0,497.05,0,478.609l0,0
+	c0-18.441,14.949-33.391,33.391-33.391h68.69c-1.231-3.482-1.908-7.227-1.908-11.13l0,0c0-18.441,14.949-33.391,33.391-33.391
+	h311.652C463.659,400.696,478.609,415.646,478.609,434.087z M387.37,155.719c4.885,0.475,9.464-0.659,13.325-2.895v46.99
+	c0,12.071,9.386,22.351,21.449,22.78c12.664,0.451,23.072-9.682,23.072-22.246v-77.913c0-6.147-4.983-11.13-11.13-11.13h-22.261
+	h-11.13h-22.261c-6.147,0-11.13,4.983-11.13,11.13v10.624C367.304,144.598,375.886,154.602,387.37,155.719z"/>
+<path style="fill:#D7F3FF;" d="M178.087,434.087c0,6.147-4.983,11.13-11.13,11.13h-33.391c-6.147,0-11.13-4.983-11.13-11.13
+	c0-6.147,4.983-11.13,11.13-11.13h33.391C173.104,422.957,178.087,427.94,178.087,434.087z M122.435,467.478H33.391
+	c-6.147,0-11.13,4.983-11.13,11.13s4.983,11.13,11.13,11.13h89.043c6.147,0,11.13-4.983,11.13-11.13
+	S128.582,467.478,122.435,467.478z M422.957,133.565c-6.147,0-11.13,4.983-11.13,11.13v55.652c0,6.147,4.983,11.13,11.13,11.13
+	c6.147,0,11.13-4.983,11.13-11.13v-55.652C434.087,138.548,429.104,133.565,422.957,133.565z"/>
+<path style="fill:#A89B80;" d="M356.174,378.435h66.783c49.178,0,89.043,39.866,89.043,89.043v33.391
+	c0,6.147-4.983,11.13-11.13,11.13H289.391c-49.178,0-89.043-39.866-89.043-89.043v-77.913c0-12.295,9.966-22.261,22.261-22.261
+	h89.043c12.295,0,22.261,9.966,22.261,22.261v11.13C333.913,368.469,343.879,378.435,356.174,378.435z"/>
+<path style="fill:#C1B291;" d="M512,467.478V512H333.913c-49.178,0-89.043-39.866-89.043-89.043v-77.913
+	c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v11.13c0,12.295,9.966,22.261,22.261,22.261
+	h44.522h22.261C472.134,378.435,512,418.301,512,467.478z"/>
+<path style="fill:#A89B80;" d="M512,467.478V512H378.435c-49.178,0-89.043-39.866-89.043-89.043v-44.522
+	c0,49.178,39.866,89.043,89.043,89.043H512z"/>
+<path style="fill:#DBCBA1;" d="M500.058,422.957H378.435c-49.178,0-89.043-39.866-89.043-89.043v-11.13h22.261
+	c12.295,0,22.261,9.966,22.261,22.261v11.13c0,12.295,9.966,22.261,22.261,22.261h66.783
+	C455.909,378.435,484.66,396.349,500.058,422.957z"/>
+<path style="fill:#91F18B;" d="M289.391,22.261v244.87v22.261H244.87V267.13V22.261C244.87,9.966,254.836,0,267.13,0
+	C279.425,0,289.391,9.966,289.391,22.261z"/>
+<path style="fill:#6BAF6E;" d="M267.13,22.261v267.13H244.87V22.261C244.87,9.966,254.836,0,267.13,0
+	c4.059,0,7.854,1.104,11.13,3.002C271.614,6.853,267.13,14.027,267.13,22.261z"/>
+<path style="fill:#FFC248;" d="M345.043,311.652L345.043,311.652c0,12.295-9.966,22.261-22.261,22.261H211.478
+	c-12.295,0-22.261-9.966-22.261-22.261l0,0c0-12.295,9.966-22.261,22.261-22.261h22.261v-11.13c0-6.147,4.983-11.13,11.13-11.13
+	h44.522c6.147,0,11.13,4.983,11.13,11.13v11.13h22.261C335.077,289.391,345.043,299.357,345.043,311.652z"/>
+<path style="fill:#FFFF63;" d="M345.043,311.652H189.217l0,0c0-12.295,9.966-22.261,22.261-22.261h111.304
+	C335.077,289.391,345.043,299.357,345.043,311.652L345.043,311.652z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+		</button>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll1">
+	<div class="divleft">
+	
+		<label id="ltitle">Registro</label>
+				
+		<form class="form1" method="POST">
+			
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='veianum' id='veianum' class='effect-1' required    />
+		<label for='veianum'>Veículo</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='8' name='placa1' id='placa1' class='effect-1' required onInput="plca(this.value,'placa1')"   />
+		<label for='placa1'>Placa</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='50' name='motivo' id='motivo' class='effect-1' required    />
+		<label for='motivo'>Motivo</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='seg' id='seg' class='effect-1' required    />
+		<label for='seg'>Nome do Segurança</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='prev' id='prev' class='effect-1' required    />
+		<label for='prev'>Atendente</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora1' id='hora1' class='effect-1' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora1'>Hora</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora1','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit1' value='SALVAR' />
+				
+		</form>
+	
+	</div>
+	<div class="divright">
+		<label id="ltitle">Histórico</label>
+		<div class="divbtnctrl">
+			<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow1"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll2">
+	<div class="divleft">
+		<label id="ltitle">Registro</label>
+			
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='14' name='armmat' id='armmat' class='effect-2' required  onkeypress='return event.charCode <= 58'  />
+		<label for='armmat'>Matrícula/CPF</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='4' name='armnum' id='armnum' class='effect-2' required  onkeypress='return event.charCode <= 58'  />
+		<label for='armnum'>Armário</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+				
+			<input type="button" class="btsubmit" id="btsubmit2" value="VINCULAR / DESVINCULAR" onclick="vincula()" />
+			<input type="button" class="btsubmit" id="btsubmit2" value="MARCAR COMO QUEBRADO" onclick="quebrado()" />
+		
+	</div>
+	<div class="divright">
+		<label id="ltitle">Armários</label>
+		<div class="divbtnctrl">
+			<button onclick="chOp(1)" title="Armários preenchidos"><div id="larm1"></div></button>
+			<button onclick="chOp(2)" title="Armários vazios"><div id="larm2"></div></button>
+			<button onclick="chOp(3)" title="Armários quebrados"><div id="larm3"></div></button>
+			<button onclick="chOp(4)" title="Armários com usuário inexistente"><div id="larm4"></div></button>
+			<button onclick="markCheckbox(1, 2)" title="Alterar modo de listagem"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-table" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+</svg></button>
+			<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />
+		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow2"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll3">
+	
+	<section class="sections" id="sections_cha">
+	
+		<section class="bloco">
+			<div class="divleft">
+				
+				
+				<div class="menucha">
+					<button onClick="scrkey('keymat', 3)" title="Pegar/Devolver Chave">Registro</button>
+					<button onClick="scrkey('caduserchave', 10)" title="Cadastro de Usuários para Controle de Chaves e Armários">Cadastro</button>
+					<button onClick="scrkey('cadnomechave', 11)" title="Cadastro e listagem de chaves">Chaves</button>
+				</div>
+								
+				<br>
+				<label id="ltitle">Registro</label>
+				
+				<form class="form3" method="POST">
+				
+					<input type="text" name="keymat" id="keymat" placeholder="Usuário" onKeypress="return event.charCode <= 58" onInput="bnumMat(1, this.value)" required autocomplete="off" />
+
+					<input type="text" name="keynum" id="keynum" placeholder="Chave" onKeypress="return event.charCode <= 58" onInput="bnumMat(2, this.value)" required autocomplete="off" />
+					
+					<input type="submit" style="display:none" >
+					
+				</form>
+				<input id="showname1" readonly />
+				<input id="showname2" readonly />
+				
+				<div class="pend"></div>
+				
+			</div>
+			<div class="divright">
+			
+				<label id="ltitle">Histórico</label>
+				
+				<div class="divbtnctrl">
+					<button onclick="chOp(5)" title="Chaves livres"><div id="larm5"></div></button>
+					<button onclick="chOp(6)" title="Chaves em uso"><div id="larm6"></div></button>
+					<button id="listcha" onclick="markCheckbox(1, 3)" title="Alterar modo de listagem"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-table" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+</svg></button>
+					<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />
+				</div>
+				
+				<div class="slide">
+					<div class="slide2">
+
+						<div class="overflow" id="overflow3"></div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</section>
+	
+		<section class="bloco">
+			<div class="divleft">
+			
+				
+				<div class="menucha">
+					<button onClick="scrkey('keymat', 3)" title="Pegar/Devolver Chave">Registro</button>
+					<button onClick="scrkey('caduserchave', 10)" title="Cadastro de Usuários para Controle de Chaves e Armários">Cadastro</button>
+					<button onClick="scrkey('cadnomechave', 11)" title="Cadastro e listagem de chaves">Chaves</button>
+				</div>
+								
+				<br>
+				<label id="ltitle">Cadastro de Usuário</label>
+				
+				<form class="form10" method="POST">
+					
+					
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='50' name='caduserchave' id='caduserchave' class='effect-3' required    />
+		<label for='caduserchave'>Nome</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='cadmat' id='cadmat' class='effect-3' required  onkeypress='return event.charCode <= 58'  />
+		<label for='cadmat'>Matrícula ou CPF</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+						
+					<select name="chaselect" id="chaselect" required >
+						
+						<option value="">Escolha uma Função</option>
+						
+	<option value='Repositor'>Repositor</option>
+	
+	<option value='Conferente'>Conferente</option>
+	
+	<option value='Fiscal'>Fiscal</option>
+	
+	<option value='Tec. Manut'>Tec. Manut</option>
+	
+	<option value='Aux. RM'>Aux. RM</option>
+	
+	<option value='Checkin'>Checkin</option>
+	
+	<option value='Trocas'>Trocas</option>
+	
+	<option value='Aux Almox'>Aux Almox</option>
+	
+	<option value='Aux Adm'>Aux Adm</option>
+	
+	<option value='Assistente'>Assistente</option>
+	
+	<option value='Empilhador'>Empilhador</option>
+	
+	<option value='Cozinha'>Cozinha</option>
+	
+	<option value='CPD'>CPD</option>
+	
+	<option value='Cadastro'>Cadastro</option>
+	
+	<option value='Aux Depos'>Aux Depos</option>
+	
+	<option value='Lider'>Lider</option>
+	
+	<option value='Estoquista'>Estoquista</option>
+	
+	<option value='Apoio'>Apoio</option>
+	
+	<option value='Atendente'>Atendente</option>
+	
+	<option value='Aprendiz'>Aprendiz</option>
+	
+	<option value='Empacotador'>Empacotador</option>
+	
+	<option value='Operador'>Operador</option>
+	
+	<option value='Servicos Gerais'>Servicos Gerais</option>
+	
+	<option value='Promotor'>Promotor</option>
+	
+	<option value='Outro'>Outro</option>
+							
+					</select>
+					
+					<input type="submit" class="btsubmit" id="btsubmit3" value="SALVAR" />
+				</form>
+				
+			</div>
+			<div class="divright">
+			
+				<label id="ltitle">Listagem de usuários</label>
+				
+				<div class="slide">
+					<div class="slide2">
+						
+						<div class="overflow" id="overflow10">
+							
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class="bloco">
+			<div class="divleft">
+			
+				
+				<div class="menucha">
+					<button onClick="scrkey('keymat', 3)" title="Pegar/Devolver Chave">Registro</button>
+					<button onClick="scrkey('caduserchave', 10)" title="Cadastro de Usuários para Controle de Chaves e Armários">Cadastro</button>
+					<button onClick="scrkey('cadnomechave', 11)" title="Cadastro e listagem de chaves">Chaves</button>
+				</div>
+								
+				<br>
+				<label id="ltitle">Cadastro de Chave</label>
+				
+				<form class="form11" method="POST">
+				
+					
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='50' name='cadnomechave' id='cadnomechave' class='effect-3' required    />
+		<label for='cadnomechave'>Nome da Chave</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='cadchave' id='cadchave' class='effect-3' required  onkeypress='return event.charCode <= 58'  />
+		<label for='cadchave'>Número da Chave</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit3' value='SALVAR' />
+						
+				</form>
+				
+			</div>
+			<div class="divright">
+				
+				<label id="ltitle">Listagem de chaves</label>
+				
+				<div class="slide">
+					<div class="slide2">
+						
+						<div class="overflow" id="overflow11"></div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+	</section>
+	
+</div><div class="scroll" id="scroll4">
+	<div class="divleft">
+	
+		<label id="ltitle">Registro</label>
+				
+		<form class="form4" method="POST">
+		
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='10' name='veifox' id='veifox' class='effect-4' required    />
+		<label for='veifox'>Número do Veículo</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='8' name='placa4' id='placa4' class='effect-4' required onInput="plca(this.value,'placa4')"   />
+		<label for='placa4'>Placa</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='30' name='foxmov' id='foxmov' class='effect-4' required    />
+		<label for='foxmov'>Nome do Móvel</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='foxport' id='foxport' class='effect-4' required    />
+		<label for='foxport'>Visto da portaria</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora4' id='hora4' class='effect-4' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora4'>Hora Entrada</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora4','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora44' id='hora44' class='effect-4' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora44'>Hora Saída</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora44','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit4' value='SALVAR' />
+				
+		</form>
+	
+	</div>
+	<div class="divright">
+		<label id="ltitle">Histórico</label>
+		<div class="divbtnctrl">
+			<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow4"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll5">
+	<div class="divleft">
+	
+		<label id="ltitle">Registro</label>
+				
+		<form class="form5" method="POST">
+			
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='senha' id='senha' class='effect-5' required    />
+		<label for='senha'>Senha</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='contra' id='contra' class='effect-5' required    />
+		<label for='contra'>Contra Senha</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='vigi' id='vigi' class='effect-5' required    />
+		<label for='vigi'>Vigilante</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='fiscal' id='fiscal' class='effect-5' required    />
+		<label for='fiscal'>Fiscal</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora5' id='hora5' class='effect-5' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora5'>Hora</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora5','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit5' value='SALVAR' />
+			</form>
+	
+	</div>
+	<div class="divright">
+		<label id="ltitle">Histórico</label>
+		<div class="divbtnctrl">
+			<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow5"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll6">
+	<div class="divleft">
+	
+		<label id="ltitle">Registro</label>
+				
+		<form class="form6" method="POST">
+			
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='8' name='placa6' id='placa6' class='effect-6' required onInput="plca(this.value,'placa6')"   />
+		<label for='placa6'>Placa</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='segpipa' id='segpipa' class='effect-6' required    />
+		<label for='segpipa'>Segurança</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='prevpipa' id='prevpipa' class='effect-6' required    />
+		<label for='prevpipa'>Prevenção</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora6' id='hora6' class='effect-6' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora6'>Hora Entrada</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora6','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora66' id='hora66' class='effect-6' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora66'>Hora Saída</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora66','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit6' value='SALVAR' />
+				
+		</form>
+	
+	</div>
+	<div class="divright">
+		<label id="ltitle">Histórico</label>
+		<div class="divbtnctrl">
+			<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow6"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll7">
+	<div class="divleft">
+	
+		<label id="ltitle">Registro</label>
+				
+		<form class="form7" method="POST">
+			
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='nomepm' id='nomepm' class='effect-7' required    />
+		<label for='nomepm'>Nome</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='15' name='comp' id='comp' class='effect-7' required    />
+		<label for='comp'>Companhia</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='aten' id='aten' class='effect-7' required    />
+		<label for='aten'>Atendente</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora7' id='hora7' class='effect-7' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora7'>Hora</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora7','')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit7' value='SALVAR' />
+	
+		</form>
+	
+	</div>
+	<div class="divright">
+		<label id="ltitle">Histórico</label>
+		<div class="divbtnctrl">
+			<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow7"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div><div class="scroll" id="scroll8">
+	
+	<section class="sections" id="sections_pneu">
+	
+		<section class="bloco">
+	
+			<div class="divleft">
+			
+				
+				<div class="menucha">
+					<button onClick="scrkey('pfiscal', 8)" title="Registro de contagem de Pneus">Registro</button>
+					<button onClick="scrkey('nomebrpneu', 12)" title="Inserir novo Pneu">Cadastro</button>
+				</div>
+							
+				<br>
+				<label id="ltitle">Registro</label>
+						
+				<form class="form8" method="POST">
+					
+					
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='pfiscal' id='pfiscal' class='effect-8' required    />
+		<label for='pfiscal'>Fiscal</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='4' name='fis' id='fis' class='effect-8' required  onkeypress='return event.charCode <= 58'  />
+		<label for='fis'>Físico</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='4' name='est' id='est' class='effect-8' required  onkeypress='return event.charCode <= 58'  />
+		<label for='est'>Estoque</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='100' name='pobs' id='pobs' class='effect-8' required    />
+		<label for='pobs'>Observação</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+						
+					<select name="pselect" id="pselect" required >
+						<option value=""> Selecione o Pneu </option>
+						<option value='57126'>PNEU DUNLOP 165/70R13 SP TOURING</option><option value='57041'>PNEU DUNLOP 175/65R14 TOURING</option><option value='57011'>PNEU DUNLOP 175/70R13 SP TOURNING</option><option value='57012'>PNEU DUNLOP 175/70R14 SP TOURING</option><option value='61281'>PNEU DUNLOP 185/60R15 SP LM704</option><option value='57013'>PNEU DUNLOP 185/65R14 SP TOURING</option><option value='61280'>PNEU DUNLOP 185/65R15 SP LM704</option><option value='57014'>PNEU DUNLOP 195/55R15 SP LM704</option><option value='57015'>PNEU DUNLOP 195/60R15 SP LM704</option><option value='66117'>PNEU DUNLOP 205/55R16 SP LM 704</option><option value='66116'>PNEU DUNLOP 205/60R16 SP LM 704</option><option value='65060'>PNEU FATE 165/70/R13</option><option value='65059'>PNEU FATE 175/65/R14</option><option value='65061'>PNEU FATE 175/70/R13</option><option value='65058'>PNEU FATE 175/70/R14</option><option value='65057'>PNEU FATE 185/65/R14</option><option value='65062'>PNEU FATE 195/55/R15</option><option value='65056'>PNEU FATE 195/60/R15</option><option value='65055'>PNEU FATE 205/55/R16</option><option value='43086'>PNEU FORMULA 275/18 DIANTEIRO</option><option value='43084'>PNEU FORMULA 60/100/17 DIANTEIRO</option><option value='43085'>PNEU FORMULA 80/100/14 TRASEIRO</option><option value='43083'>PNEU FORMULA 90/90/18 TRASEIRO</option><option value='63987'>PNEU FUZION 175/65R14</option><option value='63985'>PNEU FUZION 175/70R13</option><option value='63986'>PNEU FUZION 175/70R14</option><option value='63988'>PNEU FUZION 195/60R15</option><option value='63989'>PNEU FUZION 205/55R16</option><option value='61160'>PNEU LEVORIN DIANT DAKAR 275/18</option><option value='61159'>PNEU LEVORIN DIANT DUNA 90/90-19</option><option value='61161'>PNEU LEVORIN DIANT MATRIX 60/100-17</option><option value='61158'>PNEU LEVORIN TRAS DAKAR 80/100-14</option><option value='61156'>PNEU LEVORIN TRAS DUNA 110/90-17</option><option value='61157'>PNEU LEVORIN TRAS MATRIX 90/90-18</option><option value='67171'>PNEU PIRELLI 165/70R13 FORM.ENERGY</option><option value='54091'>PNEU PIRELLI 165/70R13 P400 EVO</option><option value='54085'>PNEU PIRELLI 175/65R14 P400 EVO</option><option value='67172'>PNEU PIRELLI 175/70R13 FORMULA EVO</option><option value='54086'>PNEU PIRELLI 175/70R13 P400 EVO</option><option value='56448'>PNEU PIRELLI 175/70R14 P400 EVO</option><option value='54936'>PNEU PIRELLI 185/65R14 P400 EVO</option><option value='60350'>PNEU PIRELLI 185/R14C KOMBI</option><option value='56449'>PNEU PIRELLI 195/55R15 P400 EVO</option><option value='66112'>PNEU PIRELLI 195/60R15 FORMULA EVO</option><option value='55640'>PNEU PIRELLI 195/60R15 P400 EVO</option><option value='66113'>PNEU PIRELLI 205/55R16 FORMULA EVO</option><option value='60351'>PNEU PIRELLI 205/55R16 P400 EVO</option><option value='60352'>PNEU PIRELLI 225/45R17 PHANTOM</option><option value='66719'>PNEU XBRI 175/65R14 PREMIUM F1</option><option value='66721'>PNEU XBRI 175/70R13 PREMIUM F1</option><option value='66720'>PNEU XBRI 175/70R14 PREMIUM F1</option><option value='66722'>PNEU XBRI 185/65R14 PREMIUM F1</option><option value='66723'>PNEU XBRI 195/60R15 ECOLOGY</option><option value='66724'>PNEU XBRI 205/60R16 ECOLOGY</option>					</select>
+					
+					<input type="submit" class="btsubmit" id="btsubmit8" value="SALVAR" />
+				</form>
+			
+			</div>
+			<div class="divright">
+				<label id="ltitle">Histórico</label>
+				<div class="divbtnctrl">
+					<input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />				</div>
+				<div class="slide">
+					<div class="slide2">
+						
+						<div class="overflow" id="overflow8"></div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</section>
+	
+		<section class="bloco">
+			<div class="divleft">
+			
+			
+				<div class="menucha">
+					<button onClick="scrkey('pfiscal', 8)" title="Registro de contagem de Pneus">Registro</button>
+					<button onClick="scrkey('nomebrpneu', 12)" title="Inserir novo Pneu">Cadastro</button>
+				</div>
+							
+			<br>
+			<label id="ltitle">Cadastro</label>
+				<form class="form12" method="POST">
+					
+					
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='50' name='nomebrpneu' id='nomebrpneu' class='effect-8' required    />
+		<label for='nomebrpneu'>Nome do Pneu</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='50' name='icode' id='icode' class='effect-8' required    />
+		<label for='icode'>Código do Pneu</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit8' value='SALVAR' />
+						
+				</form>
+				
+			</div>
+			<div class="divright">
+
+				<label id="ltitle">Listagem de Pneus</label>
+				
+				<div class="slide">
+					<div class="slide2">
+						
+						<div class="overflow" id="overflow12"></div>
+						
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		
+	</section>
+	
+</div><div class="scroll" id="scroll9">
+	<div class="divleft">
+	
+		<label id="ltitle">Registro</label>
+				
+		<form class="form9" method="POST">
+			
+			
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='30' name='senhasenha' id='senhasenha' class='effect-9' required   onInput='bsenha(this.value)' />
+		<label for='senhasenha'>Senha</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='opsenha' id='opsenha' class='effect-9' required    />
+		<label for='opsenha'>Operador</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='20' name='prevsenha' id='prevsenha' class='effect-9' required    />
+		<label for='prevsenha'>Prevenção</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora9' id='hora9' class='effect-9' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora9'>Hora Início</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		<span class='pegahora' onclick="horaAtual('hora9','hora99')" title='Clique para pegar hora atual'><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.036 280.036" style="enable-background:new 0 0 280.036 280.036;" xml:space="preserve">
+<g>
+	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
+		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
+	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
+		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
+	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
+		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
+		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+	</div>
+	
+	
+	
+	<div class='col-3 input-effect'>
+		<input type='text' maxlength='5' name='hora99' id='hora99' class='effect-9' required  onkeypress='return event.charCode <= 58'  />
+		<label for='hora99'>Hora Término</label>
+		<span class='focus-border'>
+			<i></i>
+		</span>
+		
+	</div>
+	
+	<input type='submit' class='btsubmit' id='btsubmit9' value='SALVAR' />
+				
+		</form>
+	
+	</div>
+	<div class="divright">
+		<label id="ltitle">Histórico</label>
+		<div class="divbtnctrl">
+			<button onClick='dsenha()' title='Dica de senha (baseada no seu histórico)'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+</svg></button><input type="date" onChange="search(this.value)" value="2022-03-19" title="Pesquisa por data..." />		</div>
+		<div class="slide">
+			<div class="slide2">
+				
+				<div class="overflow" id="overflow9"></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div>	</div>
+</body>
+</html>
